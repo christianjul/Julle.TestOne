@@ -1,0 +1,23 @@
+<f:layout name="Default" />
+
+<f:section name="Title">A list of mains</f:section>
+
+<f:section name="Content">
+	<f:if condition="{mains}">
+		<f:then>
+			<ul>
+				<f:for each="{mains}" as="main">
+					<li>
+						<f:link.action action="show" arguments="{main: main}">{main.name}</f:link.action>
+						<f:link.action action="edit" arguments="{main: main}">Edit</f:link.action>
+						<f:link.action action="delete" arguments="{main: main}">Delete</f:link.action>
+					</li>
+				</f:for>
+			</ul>
+		</f:then>
+		<f:else>
+			<p>No mains created yet.</p>
+		</f:else>
+	</f:if>
+	<p><f:link.action action="new">Create a new main</f:link.action></p>
+</f:section>

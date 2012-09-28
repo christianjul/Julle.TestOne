@@ -1,0 +1,18 @@
+{
+	"name":"julle\/testone",
+	"type":"flow3-package",
+	"description": "test package",
+	"require":{"typo3\/flow3":"*"},
+	"autoload": {
+		    "psr-0": {
+		    	     "Julle\\TestOne":"Classes"
+		     }
+        },
+	"extra": {
+		 "flow3": {
+		 	  "post-install" : "Julle\\TestOne\\Install::runThis",
+		 	  "post-update" : "Julle\\TestOne\\Install::runThis",
+			  "manage-resources" : true
+		 }
+	}
+}
