@@ -13,7 +13,7 @@ namespace Julle\TestOne;
 class Install {
 
       public static function runThis() {
-      	     echo "thanks for running me! You have made a small installer script very happy!";
+      	     echo "Thanks for running me! You have made a small installer script very happy! \r\n";
       }
 
 }
