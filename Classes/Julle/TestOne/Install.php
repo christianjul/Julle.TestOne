@@ -1,5 +1,5 @@
 <?php
-namespace Julle\TestOne\;
+namespace Julle\TestOne;
 
 /*                                                                        *
  * This script belongs to the FLOW3 package "Julle.TestOne".              *
